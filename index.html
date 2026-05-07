@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Nail Studio</title>
+    <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWfCF1qcB_VwzC6fqCeROY7GyDzWUPZm5We0nnFIC_Jf7kn7mx99a23UlKDNIHuPcz7rnGtmmbYtd9_NmP019n2fNi0qAZWEH1LgtZ6QeEz2ys97I5MSDHiK5IyXKc48pYtSgDkgbcuLqwrpDhIdVJo3PSM-eyANRA87v16VMs5OXnJs69x2_dPfgCf1Y/s320/U%C3%91A.png" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-bg-light font-sans antialiased" id="inicio">
+
+    <div id="message-box" class="fixed top-4 right-4 z-50 transition-transform transform translate-x-full duration-500">
+        <div class="bg-green-600 text-white p-4 rounded-lg shadow-xl flex items-center space-x-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span id="message-text"></span>
+        </div>
+    </div>
+
+    <header class="bg-white shadow-lg sticky top-0 z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary tracking-wider">
+                Mi <span class="text-secondary">Nail Studio</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-gray-700 hover:text-primary transition duration-150 font-medium text-lg">Inicio</a>
+                <a href="#servicios" class="text-gray-700 hover:text-primary transition duration-150 font-medium text-lg">Servicios</a>
+                <a href="#contacto" class="text-gray-700 hover:text-primary transition duration-150 font-medium text-lg">Cita</a>
+                <a href="#ubicacion" class="text-gray-700 hover:text-primary transition duration-150 font-medium text-lg">Ubicación</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden p-2 text-primary hover:text-primary-dark rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                <svg id="menu-icon-open" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-primary/95 shadow-md">
+            <a href="#inicio" class="mobile-link block py-3 px-6 text-white hover:bg-primary-dark font-semibold">Inicio</a>
+            <a href="#servicios" class="mobile-link block py-3 px-6 text-white hover:bg-primary-dark font-semibold">Servicios</a>
+            <a href="#contacto" class="mobile-link block py-3 px-6 text-white hover:bg-primary-dark font-semibold">Cita</a>
+            <a href="#ubicacion" class="mobile-link block py-3 px-6 text-white hover:bg-primary-dark font-semibold">Ubicación</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-bg text-white py-10 sm:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                    Diseños Exclusivos, Cuidado Superior
+                </h1>
+
+                <section class="slider-container rounded-xl shadow-xl mb-10 mx-auto max-w-5xl">
+                    <div id="slider-wrapper" class="slider-wrapper">
+                        <div class="slider-item">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGM3AzJ2Anf0yr0zFtufjzsumPXZK5kCp8UWFxxysEISXWETB_laqiN8Fg_wRSA-GbiKmZ4_eAHLf5h-aYdsa5BzT3DAZjOt2ZGGpntTo7dFedMn0rhmWWFzz9kXowGrnessrx8pklM1c4bDa-m0-Icp4PiThyphenhyphenm2TaEUSzUB0-yzQ-OXWqMce9RTTSfTo/w640-h640/imagen_de_trabajo_de_u_as_de_un%20(1).jpeg" alt="1" class="slider-image" onerror="this.src='https://placehold.co/1200x400/a3003e/ffffff?text=Diseño+1';">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDP6xpkU3jLIs1UGDyG63w4fTv-7mZ1k5FEBLN3vmg4CmuXglVHkL9tXNdRj1ZAAyUwWY2WKeZVEnz6ikKMZHf6cFXJR-NUPJlO6_u6ZQPEazww-bYQI0Xi0NaemsWgfd2RgsL5Nb9C0gHbr1fB3s1r7W35BJsZcH3v6_ov-u1dnhhU_n73dpI5VzOrug/w640-h640/imagen_de_trabajo_de_u_as_de_un%20(2).jpeg" alt="2" class="slider-image" onerror="this.src='https://placehold.co/1200x400/e6a57c/000000?text=Diseño+2';">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim_4zli719ooRlDgwHx4ygPNkETxhXC-Irfz10_v-FIESlFB3I5zgKc4OvCpEPyZ0vFJAeAis_0nI6xWNVzbThk-DcJNMgrsh0Xc1911tFJBdxqP_MZn8SbGWLQgEuwSNi2zPA7S-nwl1bSaEbHEZAi4UBj3BnMNvC9Nwy7WuWJYvBot2zM2tY1KbXpB8/w640-h640/imagen_de_trabajo_de_u_as_de_un.jpeg" alt="3" class="slider-image" onerror="this.src='https://placehold.co/1200x400/8e0037/ffffff?text=Diseño+3';">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCDS5OspeND_Fcpzu9rAxjqPrLUHnuZ4csKopGRIdhFrlNT7HBJMp_kN-iXlQTQ3HRV0lHEGmf0YtAujGOK8o2tjHLbJACSxmTUX6XSOifeO2gBVNQeFX27MkUkrwa_13wL6YIgkggLSxBhGJayY9_u8VhsbPfBsZFv3BGFIjhPJZfjrK9XPOJ4Rf64ZE/w640-h640/trabajo_de_u_as_de_un_negocio_de%20(1).jpeg" alt="4" class="slider-image" onerror="this.src='https://placehold.co/1200x400/a3003e/ffffff?text=Diseño+4';">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkxpXFaiM0GbPDyIM3D1bjErB6eRPgxOanLvcGe4H1GCNYJet93XChxqRRVjB_nbm9IaEH6r0OAxaZm2MKivwmXz9ZQc1ZFW8QGqMS2aGk6sXlSF4xGfhp2qwl9mtqiOUvqP_DEoNiDF3OeBMSKIShEWIHZFGVZNroBpnqaATezNPe7jg3wQ70EzcAbKc/w640-h640/trabajo_de_u_as_de_un_negocio_de%20(2).jpeg" alt="5" class="slider-image" onerror="this.src='https://placehold.co/1200x400/e6a57c/000000?text=Diseño+5';">
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuKBa0av9n7MbI1UGdJuYQ9osIAAOexHTIYWHWUU3pRJ1WCXe-wrjSXx2wwm9KC0a3cGizha5WiHZQmCh-y7ZXMyRRzRBXQiIEi9DDXFHRqWpzEuTNHgT_xG_LvYYo0pzG9JExt6eTUVWhG_uK2tQ2n3XJtQwGYEJhYslsu1uGweNqxUDI8itlSNqXeSs/w640-h640/trabajo_de_u_as_de_un_negocio_de%20(3).jpeg" alt="6" class="slider-image" onerror="this.src='https://placehold.co/1200x400/8e0037/ffffff?text=Diseño+6';">
+                        </div>
+                    </div>
+        
+                    <button id="prev-button" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800/50 text-white p-3 rounded-full hover:bg-gray-800 transition duration-300 z-10 hidden sm:block">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="next-button" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800/50 text-white p-3 rounded-full hover:bg-gray-800 transition duration-300 z-10 hidden sm:block">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                    <div id="slider-dots" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2"></div>
+                </section>
+                
+                <p class="text-lg sm:text-xl mb-10 opacity-80 max-w-3xl mx-auto">
+                    Transformamos tus manos en arte. Agenda tu primera visita hoy y recibe un 15% de descuento.
+                </p>
+                <div class="max-w-md mx-auto" id="contacto">
+                    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-2xl text-gray-800">
+                        <h2 class="text-2xl font-bold mb-6 text-primary">Solicita tu Cita</h2>
+                        <form id="lead-form" class="space-y-4">
+                            <input type="text" id="name" placeholder="Tu Nombre" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                            <input type="email" id="email" placeholder="Correo Electrónico" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                            <input type="tel" id="phone" placeholder="Teléfono (Opcional)" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                            <button type="submit" id="submit-button" class="w-full bg-secondary hover:bg-primary-dark text-white font-semibold py-3 rounded-lg shadow-md flex items-center justify-center">
+                                <span id="button-text">Reservar mi Visita</span>
+                                <svg id="spinner" class="animate-spin h-5 w-5 ml-2 hidden" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="servicios">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">Nuestros Servicios Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Uñas Acrílicas y Gel</h3>
+                    <p class="text-gray-600">Trabajamos con materiales de la más alta calidad.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-secondary">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Manicura Premium</h3>
+                    <p class="text-gray-600">Tratamiento completo e hidratación profunda.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Diseños Personalizados</h3>
+                    <p class="text-gray-600">¡Tu imaginación es el límite!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 sm:py-24 bg-gray-100" id="ubicacion">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-8">Encuéntranos Aquí</h2>
+                <div class="map-container bg-white rounded-xl shadow-xl overflow-hidden w-full h-[300px] sm:h-[400px]">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30103.749227186974!2d-99.19135630130766!3d19.413760321215268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff2390a3f315%3A0xcbe00a141d32813c!2sHospital%20General!5e0!3m2!1ses!2smx!4v1760893662059!5m2!1ses!2smx" width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <p class="text-sm font-semibold text-gray-700 mt-4">Paseo de la Reforma 222, CDMX</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="text-center text-sm">
+            <p>© 2025 Mi Nail Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
